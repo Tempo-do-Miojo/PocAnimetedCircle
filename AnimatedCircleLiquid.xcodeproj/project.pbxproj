@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		7B9F85092649FC9500AFA30F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9F85082649FC9500AFA30F /* ContentView.swift */; };
 		7B9F850B2649FC9800AFA30F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B9F850A2649FC9800AFA30F /* Assets.xcassets */; };
 		7B9F850E2649FC9800AFA30F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B9F850D2649FC9800AFA30F /* Preview Assets.xcassets */; };
+		7B9F85172649FE3000AFA30F /* Liquid in Frameworks */ = {isa = PBXBuildFile; productRef = 7B9F85162649FE3000AFA30F /* Liquid */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B9F85172649FE3000AFA30F /* Liquid in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = AnimatedCircleLiquid;
+			packageProductDependencies = (
+				7B9F85162649FE3000AFA30F /* Liquid */,
+			);
 			productName = AnimatedCircleLiquid;
 			productReference = 7B9F85032649FC9500AFA30F /* AnimatedCircleLiquid.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +117,9 @@
 				Base,
 			);
 			mainGroup = 7B9F84FA2649FC9500AFA30F;
+			packageReferences = (
+				7B9F85152649FE3000AFA30F /* XCRemoteSwiftPackageReference "liquid" */,
+			);
 			productRefGroup = 7B9F85042649FC9500AFA30F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -328,6 +336,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7B9F85152649FE3000AFA30F /* XCRemoteSwiftPackageReference "liquid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maustinstar/liquid";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7B9F85162649FE3000AFA30F /* Liquid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B9F85152649FE3000AFA30F /* XCRemoteSwiftPackageReference "liquid" */;
+			productName = Liquid;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7B9F84FB2649FC9500AFA30F /* Project object */;
 }
